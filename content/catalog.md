@@ -1,6 +1,6 @@
 ---
 title: Catalog
-aliases: [catalog, master index]
+aliases: [master index]
 type: note
 tags: [index, scfm]
 status: draft

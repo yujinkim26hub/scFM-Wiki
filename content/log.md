@@ -1,6 +1,6 @@
 ---
 title: Log
-aliases: [log, changelog]
+aliases: [changelog]
 type: note
 tags: [log, scfm]
 status: draft
@@ -12,6 +12,13 @@ updated: 2026-06-03
 Chronological record of ingestions and substantive edits. **Prepend** new entries (newest first). Each entry: date, what changed, pages touched.
 
 ---
+
+## 2026-06-03 — Fix blank Catalog/Log pages; exclude templates from site
+
+- **Bug:** [[catalog|Catalog]] and [[log|Log]] rendered as blank white pages. Cause: `catalog.md`/`log.md` listed their own slug as an alias (`aliases: [catalog, …]` / `[log, …]`). Quartz emits alias redirects at the site root, so for these root-level pages the redirect overwrote the real page with a self-referential `<meta refresh>` loop. (Subfolder pages like `20-Models/Geneformer` were unaffected — their root-level alias redirect sits at a different path than the real page.)
+- **Fix:** removed the self-referential aliases (`catalog`, `log`). Links still resolve by filename slug; pages now render real content. `catalog.md`/`log.md` stay at the content root.
+- **Site cleanup:** `deploy.yml` now removes `90-Meta/templates` from the *copied* Quartz content (templates remain in the repo / Obsidian vault), so placeholder pages like `<concept>.html` are no longer published.
+- Verified locally (Quartz v4): `catalog.html`/`log.html` contain real content, title stays "scFM-Wiki", no new unresolved wikilinks.
 
 ## 2026-06-03 — Fix Quartz Pages build
 

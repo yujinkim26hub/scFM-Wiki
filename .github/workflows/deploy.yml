@@ -71,6 +71,10 @@ jobs:
         run: |
           rm -rf quartz/content
           cp -r wiki/content quartz/content
+          # Templates stay in the repo / Obsidian vault, but are excluded from the
+          # published site so their placeholder frontmatter doesn't emit junk pages
+          # (e.g. <concept>.html, <model-name>.html).
+          rm -rf quartz/content/90-Meta/templates
 
       - name: Set site title and baseUrl
         working-directory: quartz
