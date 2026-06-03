@@ -15,7 +15,7 @@ The authoritative index of every page. When a page is added or substantially cha
 
 | Summary | Model | Year | Venue | Status |
 |---|---|---|---|---|
-| _none yet — ingest with the paper workflow_ | — | — | — | — |
+| [[rosen-2023-universal-cell-embeddings\|Rosen 2023 — Universal Cell Embeddings]] | [[UCE]] | 2023 | bioRxiv | reviewed |
 
 ## Models (`20-Models/`)
 

@@ -28,6 +28,7 @@ The central premise is [[transfer learning]]: representations learned from unlab
 ## Models / methods that use it
 - General scFMs: [[Geneformer]], [[scGPT]], [[scFoundation]], [[scBERT]], [[UCE]], [[CellPLM]], [[scPRINT]], [[GeneCompass]], [[scMamba]].
 - Perturbation-specific (contrast): [[GEARS]], [[CPA]], [[scGen]].
+- **Example (ingested):** [[rosen-2023-universal-cell-embeddings|UCE (Rosen 2023)]] — a **zero-shot, cross-species** scFM (ESM2 protein-embedding gene encoding; ~36M cells across 8 species; 33-layer/~650M transformer) that emits a universal [[cell embedding]].
 
 ## Related concepts
 [[gene embedding]], [[cell embedding]], [[transfer learning]], [[zero-shot prediction]], [[fine-tuning]], [[tokenization-strategy|tokenization strategy]], [[virtual cell model]]

@@ -26,7 +26,7 @@ The unlabeled corpus a general scFM was pretrained on: corpus name, approximate 
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | needs verification. | Corpus and cell count needs verification. |
 | [[CellPLM]] | scRNA-seq + spatial data used for pretraining. | Wen 2024, ICLR (needs verification) | Includes spatial transcriptomic data. | Corpus name / cell count needs verification. |
 | [[scPRINT]] | needs verification. | Kalfon ~2024 (needs verification) | needs verification. | Corpus and cell count needs verification. |
-| [[UCE]] | Multi-species single-cell corpus. | Rosen 2023, bioRxiv (needs verification) | Cross-species pretraining. | Corpus name / cell count needs verification. |
+| [[UCE]] | ~36M single-cell transcriptomes across 8 species (human, mouse, zebrafish, lemur, 2 macaques, frog, pig); Integrated Mega-scale Atlas (IMA). | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | Cross-species self-supervised pretraining; perturbation data not used. | Exact dataset count needs verification. |
 | [[GeneCompass]] | Human + mouse; ~120M cells. | Yang 2024 (needs verification) | Cross-species, knowledge-informed pretraining. | Cell count needs verification. |
 | [[GEARS]] | n/a — supervised on Perturb-seq, not pretrained on an unlabeled corpus. | Roohani 2023, Nat Biotech (needs verification) | Perturbation-specific; trains on labeled perturbation data. | — |
 | [[CPA]] | n/a — supervised on perturbation data, not pretrained on an unlabeled corpus. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Perturbation-specific. | — |

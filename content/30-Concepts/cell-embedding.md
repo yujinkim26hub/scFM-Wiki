@@ -26,6 +26,7 @@ Cell embeddings are the main output used for downstream tasks: cell-type annotat
 
 ## Models / methods that use it
 - [[Geneformer]], [[scGPT]], [[scFoundation]], [[scBERT]], [[UCE]], [[CellPLM]], [[scPRINT]], [[GeneCompass]], [[scMamba]] all produce cell embeddings.
+- **Example (ingested):** [[rosen-2023-universal-cell-embeddings|UCE (Rosen 2023)]] outputs a **zero-shot universal cell embedding** comparable across datasets and species — a representation, **not** a transcriptome or a [[perturbation prediction]].
 
 ## Related concepts
 [[gene embedding]], [[cell-state shift]], [[batch correction]], [[data integration]], [[in-silico perturbation]]

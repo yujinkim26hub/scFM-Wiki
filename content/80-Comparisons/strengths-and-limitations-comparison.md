@@ -26,7 +26,7 @@ The design strengths and stated / inferred limitations of each model, as reporte
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | SSM backbone may offer efficiency. | Most specifics needs verification. |
 | [[CellPLM]] | Strength: models inter-cell + spatial relations. | Wen 2024, ICLR (needs verification) | Cell-as-token + spatial context. | Perturbation specifics needs verification. |
 | [[scPRINT]] | Strength: GRN inference + multi-task outputs. | Kalfon ~2024 (needs verification) | Network-oriented scFM. | Venue / backbone needs verification. |
-| [[UCE]] | Strength: zero-shot, vocabulary-free, cross-species embeddings. | Rosen 2023, bioRxiv (needs verification) | No fine-tuning required. | Cell-embedding only; no expression output. |
+| [[UCE]] | Strength: zero-shot, vocabulary-free, cross-species embeddings; protein-sequence gene grounding. | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | No fine-tuning required. | Embedding-only (no expression/perturbation); zero-shot-only may trail tuned models. |
 | [[GeneCompass]] | Strength: knowledge-informed priors; cross-species. | Yang 2024 (needs verification) | Biological priors aid generalization. | Venue / cell count needs verification. |
 | [[GEARS]] | Strength: transcriptome-level prediction incl. unseen / combinatorial perturbations. | Roohani 2023, Nat Biotech (needs verification) | Strong for genetic-perturbation outcomes. | Requires perturbation data; not a foundation model. |
 | [[CPA]] | Strength: disentangled, interpretable condition latent; unseen combos. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Interpretable perturbation/dose effects. | Requires labeled conditions; not a foundation model. |

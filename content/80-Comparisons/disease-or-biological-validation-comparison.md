@@ -26,7 +26,7 @@ What disease-context or biological validation each source demonstrates (e.g., a 
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | needs verification. | needs verification. |
 | [[CellPLM]] | needs verification. | Wen 2024, ICLR (needs verification) | Disease validation unclear. | needs verification. |
 | [[scPRINT]] | needs verification. | Kalfon ~2024 (needs verification) | Disease validation unclear. | needs verification. |
-| [[UCE]] | needs verification. | Rosen 2023, bioRxiv (needs verification) | Disease validation unclear. | needs verification. |
+| [[UCE]] | Broad cell-biology focus; no disease-prediction claims (atlas mapping incl. Human Brain Cell Atlas). | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | No disease validation claimed; integration could aid disease-tissue annotation. | Do not infer clinical utility. |
 | [[GeneCompass]] | needs verification. | Yang 2024 (needs verification) | Disease validation unclear. | needs verification. |
 | [[GEARS]] | Perturbation prediction has clear genetic-screen / functional-genomics relevance; specific disease validation needs verification. | Roohani 2023, Nat Biotech (needs verification) | Predicting genetic perturbation outcomes is biology-relevant. | Specific disease claims needs verification. |
 | [[CPA]] | Drug / dose-response modeling has pharmacology relevance; specific disease validation needs verification. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Condition-response modeling relevant to drug effects. | needs verification. |

@@ -26,7 +26,7 @@ Which tasks need fine-tuning a pretrained model with a task head (vs frozen/zero
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | needs verification. | Fine-tuning status needs verification. |
 | [[CellPLM]] | Fine-tuned / decoded for annotation, imputation, spatial tasks. | Wen 2024, ICLR (needs verification) | Task-specific heads on cell embeddings. | needs verification. |
 | [[scPRINT]] | Multi-task training covers denoising / label / GRN. | Kalfon ~2024 (needs verification) | Heads correspond to multiple tasks. | Fine-tuning vs joint-training needs verification. |
-| [[UCE]] | No fine-tuning required by design. | Rosen 2023, bioRxiv (needs verification) | Intended for frozen, zero-shot embeddings. | needs verification. |
+| [[UCE]] | None by design — authors state it is "not intended to be finetuned." | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | Used as a frozen, zero-shot embedder. | — |
 | [[GeneCompass]] | Fine-tuned for downstream tasks (extent needs verification). | Yang 2024 (needs verification) | Pretrained backbone + task heads. | needs verification. |
 | [[GEARS]] | n/a — trained directly (supervised) on perturbation data, not fine-tuned from a pretrained scFM. | Roohani 2023, Nat Biotech (needs verification) | Task-specific from the start. | — |
 | [[CPA]] | n/a — trained directly on condition-labeled data. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Not a pretrain-then-fine-tune model. | — |

@@ -26,7 +26,7 @@ Which tasks a model is reported (by its source) to perform: cell-type **annotati
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | needs verification. | Task list needs verification. |
 | [[CellPLM]] | Annotation, imputation, spatial tasks. | Wen 2024, ICLR (needs verification) | Includes spatial / cell-level tasks. | Perturbation specifics needs verification. |
 | [[scPRINT]] | GRN inference, denoising, labeling (multi-task). | Kalfon ~2024 (needs verification) | GRN-focused multi-task scFM. | needs verification. |
-| [[UCE]] | Zero-shot cell embedding (e.g., annotation via embeddings, cross-species). | Rosen 2023, bioRxiv (needs verification) | Embedding tasks without fine-tuning. | needs verification. |
+| [[UCE]] | Zero-shot embedding: cell-type organization/annotation, cross-species/-dataset integration, atlas mapping. | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | Embedding tasks without fine-tuning; no perturbation. | — |
 | [[GeneCompass]] | Embedding-based tasks across human + mouse. | Yang 2024 (needs verification) | Cross-species downstream tasks. | Full task list needs verification. |
 | [[GEARS]] | Perturbation prediction, incl. unseen / combinatorial. | Roohani 2023, Nat Biotech (needs verification) | Single-purpose: perturbation outcomes. | needs verification. |
 | [[CPA]] | Perturbation / dose / covariate response prediction. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Predicts unseen condition combos. | needs verification. |

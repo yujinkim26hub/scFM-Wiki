@@ -26,7 +26,7 @@ The native output of each model: **gene embedding**, **cell embedding**, **predi
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | needs verification. | Output type needs verification. |
 | [[CellPLM]] | Cell embeddings. | Wen 2024, ICLR (needs verification) | Cell-level representations; supports imputation. | needs verification. |
 | [[scPRINT]] | Cell embeddings + GRN / gene-gene estimates. | Kalfon ~2024 (needs verification) | Outputs network estimates alongside embeddings. | needs verification. |
-| [[UCE]] | Cell embedding only. | Rosen 2023, bioRxiv (needs verification) | Universal embedding; no expression output. | needs verification. |
+| [[UCE]] | Universal cell embedding only (no expression output). | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | One vector per cell, comparable across datasets/species. | Exact dim (commonly 1280) needs verification. |
 | [[GeneCompass]] | Gene + cell embeddings. | Yang 2024 (needs verification) | Embedding model. | needs verification. |
 | [[GEARS]] | Predicted post-perturbation expression (transcriptome-level). | Roohani 2023, Nat Biotech (needs verification) | Outputs full expression profiles. | needs verification. |
 | [[CPA]] | Predicted expression for conditions / combos. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Outputs expression under specified conditions. | needs verification. |

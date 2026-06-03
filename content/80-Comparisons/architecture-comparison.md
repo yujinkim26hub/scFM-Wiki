@@ -26,7 +26,7 @@ The backbone family and structure: transformer encoder / decoder, state-space mo
 | [[scMamba]] | Mamba / state-space (SSM) backbone. | ~2024 (needs verification) | SSM alternative to attention. | Most specifics needs verification; name may be shared by multiple preprints. |
 | [[CellPLM]] | Transformer treating cells as tokens; Gaussian-mixture latent prior. | Wen 2024, ICLR (needs verification) | Models inter-cell / spatial relations. | Depth / params needs verification. |
 | [[scPRINT]] | needs verification. | Kalfon ~2024 (needs verification) | Multi-task scFM. | Backbone / depth needs verification. |
-| [[UCE]] | Transformer over protein-LM (ESM2) gene embeddings. | Rosen 2023, bioRxiv (needs verification) | Gene representations come from a protein LM. | Depth / params needs verification. |
+| [[UCE]] | 33-layer transformer (~650M params) over ESM2 protein-LM gene embeddings; a smaller 4-layer model is also released. | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | Gene representations come from a protein LM, not a learned gene-token table. | Exact embedding dim (commonly cited 1280) needs verification. |
 | [[GeneCompass]] | Transformer with knowledge-informed priors. | Yang 2024 (needs verification) | Priors injected into a transformer backbone. | Depth / params needs verification. |
 | [[GEARS]] | Graph neural network over co-expression + GO graph. | Roohani 2023, Nat Biotech (needs verification) | GNN, not a sequence model. | Depth / params needs verification. |
 | [[CPA]] | Autoencoder with disentangled additive latent space. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Encoder-decoder with condition disentanglement. | needs verification. |

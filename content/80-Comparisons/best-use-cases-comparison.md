@@ -26,7 +26,7 @@ The use case each model is reported to fit, based on its design and supported ta
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | Possibly efficiency-oriented use cases. | Most specifics needs verification. |
 | [[CellPLM]] | Annotation, imputation, spatial analysis. | Wen 2024, ICLR (needs verification) | Use when inter-cell / spatial context matters. | Perturbation specifics needs verification. |
 | [[scPRINT]] | Gene-network inference and denoising. | Kalfon ~2024 (needs verification) | Use for GRN-centric questions. | Venue / specifics needs verification. |
-| [[UCE]] | Zero-shot, cross-species cell embeddings. | Rosen 2023, bioRxiv (needs verification) | Use when no fine-tuning and cross-species generality are wanted. | Cell-embedding only. |
+| [[UCE]] | Cross-species annotation, atlas/query mapping, dataset integration — zero-shot. | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | Use when no fine-tuning and cross-species/vocabulary-free generality are wanted. | Embedding-only; not for expression/perturbation. |
 | [[GeneCompass]] | Cross-species embedding tasks with biological priors. | Yang 2024 (needs verification) | Use for human/mouse cross-species analysis. | Specifics needs verification. |
 | [[GEARS]] | Predicting genetic perturbation outcomes, incl. unseen / combinatorial. | Roohani 2023, Nat Biotech (needs verification) | Use when perturbation data exist and expression prediction is the goal. | Requires perturbation data. |
 | [[CPA]] | Predicting drug / dose / covariate response. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Use for compositional condition prediction. | Requires labeled conditions. |

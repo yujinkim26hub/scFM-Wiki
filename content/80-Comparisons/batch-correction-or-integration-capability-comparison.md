@@ -26,7 +26,7 @@ Whether a model is reported to perform batch correction or cross-dataset integra
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | needs verification. | Integration capability needs verification. |
 | [[CellPLM]] | needs verification (models inter-cell / spatial relations). | Wen 2024, ICLR (needs verification) | Cell-context modeling may support integration. | needs verification. |
 | [[scPRINT]] | needs verification. | Kalfon ~2024 (needs verification) | GRN-focused; integration unclear. | needs verification. |
-| [[UCE]] | Cross-species universal embeddings aim for dataset-agnostic representation. | Rosen 2023, bioRxiv (needs verification) | Designed for cross-dataset / cross-species embedding. | Quantitative batch-integration claims needs verification. |
+| [[UCE]] | Zero-shot integration of datasets, batches, and species; evaluated with scIB. | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | Embedding-level integration (not generative expression correction). | Exact scIB scores needs verification. |
 | [[GeneCompass]] | Cross-species embeddings; integration extent needs verification. | Yang 2024 (needs verification) | Cross-species representation. | needs verification. |
 | [[GEARS]] | n/a — perturbation-specific; integration not its purpose. | Roohani 2023, Nat Biotech (needs verification) | Out of scope. | — |
 | [[CPA]] | Models covariate effects, which can absorb some batch structure; not a general integrator. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Covariate disentanglement is related but not the same as batch integration. | needs verification. |

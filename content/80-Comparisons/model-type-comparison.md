@@ -26,7 +26,7 @@ Whether a model is a **general single-cell foundation model** (pretrained on lar
 | [[scMamba]] | General scFM; Mamba / state-space (SSM) backbone. | ~2024 (needs verification) | SSM-family foundation model. | Most specifics needs verification; multiple preprints may share the name. |
 | [[CellPLM]] | General scFM; transformer treating cells as tokens. | Wen 2024, ICLR (needs verification) | Foundation-model class; cell-level / spatial. | needs verification. |
 | [[scPRINT]] | General scFM focused on gene-network inference; multi-task. | Kalfon ~2024 (venue needs verification) | Foundation-model class with GRN emphasis. | Venue and backbone needs verification. |
-| [[UCE]] | General scFM; protein-LM-conditioned, cross-species. | Rosen 2023, bioRxiv (needs verification) | Foundation-model class; universal embeddings. | needs verification. |
+| [[UCE]] | General scFM (zero-shot embedder); protein-LM-grounded, cross-species. | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | Foundation-model class; universal embeddings. | — |
 | [[GeneCompass]] | General scFM; knowledge-informed, cross-species. | Yang 2024 (venue needs verification) | Foundation-model class with biological priors. | Venue needs verification. |
 | [[GEARS]] | Perturbation-specific model; GNN over co-expression + GO graph. | Roohani 2023, Nat Biotech (needs verification) | Supervised perturbation predictor, not a foundation model. | needs verification. |
 | [[CPA]] | Perturbation-specific model; autoencoder with disentangled latent. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Supervised perturbation predictor, not a foundation model. | needs verification. |

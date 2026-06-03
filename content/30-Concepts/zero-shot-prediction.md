@@ -26,6 +26,7 @@ Zero-shot is the strongest test of the [[single-cell foundation model|scFM]] / [
 
 ## Models / methods that use it
 - Zero-shot embedding use evaluated for [[Geneformer]], [[scGPT]], [[scFoundation]], [[UCE]], [[scBERT]] (results vary by benchmark; needs verification).
+- **Example (ingested):** [[UCE]] is **zero-shot by design** — the authors state it is "not intended to be finetuned"; new datasets and even unseen species are embedded with frozen weights ([[rosen-2023-universal-cell-embeddings|Rosen 2023]]).
 
 ## Related concepts
 [[fine-tuning]], [[transfer learning]], [[cell embedding]], [[data integration]], [[batch correction]]

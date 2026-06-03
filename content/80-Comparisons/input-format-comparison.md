@@ -26,7 +26,7 @@ What modality and form of single-cell data a model takes as input: scRNA / snRNA
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | needs verification. | Modality and #genes needs verification. |
 | [[CellPLM]] | scRNA-seq and spatial transcriptomics; cells treated as tokens. | Wen 2024, ICLR (needs verification) | Input includes spatial / inter-cell context. | Counts vs normalized needs verification. |
 | [[scPRINT]] | scRNA-seq. | Kalfon ~2024 (needs verification) | needs verification. | Input encoding / #genes needs verification. |
-| [[UCE]] | scRNA-seq, cross-species; genes mapped to protein-LM (ESM2) embeddings. | Rosen 2023, bioRxiv (needs verification) | Vocabulary-free: not tied to a fixed gene list. | Counts vs normalized needs verification. |
+| [[UCE]] | scRNA-seq/snRNA-seq counts, multi-species; genes mapped to ESM2 protein-LM embeddings. | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | Vocabulary-free: not tied to a fixed gene list. | — |
 | [[GeneCompass]] | scRNA-seq, human + mouse. | Yang 2024 (needs verification) | Cross-species input. | #genes / form needs verification. |
 | [[GEARS]] | Perturb-seq expression plus co-expression and GO graph structure. | Roohani 2023, Nat Biotech (needs verification) | Requires perturbation-labeled input. | needs verification. |
 | [[CPA]] | Perturbation-labeled scRNA-seq with covariate/dose annotations. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Requires condition annotations. | Counts vs normalized needs verification. |

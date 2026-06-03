@@ -26,7 +26,7 @@ Two distinctions required by [[AGENTS]] §0.3 and §0.5: (a) whether perturbatio
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | needs verification. | Perturbation capability needs verification. |
 | [[CellPLM]] | Perturbation specifics needs verification. | Wen 2024, ICLR (needs verification) | Primarily annotation / imputation / spatial. | needs verification. |
 | [[scPRINT]] | needs verification (GRN-focused, not perturbation prediction). | Kalfon ~2024 (needs verification) | Network inference rather than perturbation response. | needs verification. |
-| [[UCE]] | Not used for transcriptome-level perturbation. | Rosen 2023, bioRxiv (needs verification) | Embedding-only; no perturbation prediction. | needs verification. |
+| [[UCE]] | No perturbation capability; perturbation data not used (pretrain/fine-tune/eval). | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | Embedding-only; neither in-silico embedding-shift nor transcriptome-level prediction. | — |
 | [[GeneCompass]] | needs verification. | Yang 2024 (needs verification) | Embedding model; perturbation use unclear. | needs verification. |
 | [[GEARS]] | Supervised on Perturb-seq; predicts post-perturbation expression, incl. unseen / combinatorial. | Roohani 2023, Nat Biotech (needs verification) | Transcriptome-level prediction; perturbation data used for training and eval. | needs verification. |
 | [[CPA]] | Supervised; predicts expression for unseen condition / dose combos. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Transcriptome-level prediction; perturbation data used for training and eval. | needs verification. |

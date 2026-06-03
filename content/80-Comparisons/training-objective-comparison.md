@@ -26,7 +26,7 @@ The loss / learning signal: masked gene prediction, generative modeling, contras
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | needs verification. | Objective needs verification. |
 | [[CellPLM]] | Self-supervised with a Gaussian-mixture latent prior. | Wen 2024, ICLR (needs verification) | Latent-variable objective at the cell level. | Exact loss needs verification. |
 | [[scPRINT]] | Multi-task objective (denoising / label / GRN). | Kalfon ~2024 (needs verification) | Combines several training signals. | Exact losses needs verification. |
-| [[UCE]] | Self-supervised objective yielding universal embeddings. | Rosen 2023, bioRxiv (needs verification) | Produces embeddings without fine-tuning. | Exact objective needs verification. |
+| [[UCE]] | Self-supervised masked binary prediction (expressed vs zero-expression genes). | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | Label-free pretraining; embeddings usable without fine-tuning. | — |
 | [[GeneCompass]] | Self-supervised pretraining with knowledge-informed priors. | Yang 2024 (needs verification) | Priors regularize the pretraining loss. | Exact objective needs verification. |
 | [[GEARS]] | Supervised perturbation prediction (regression to post-perturbation expression). | Roohani 2023, Nat Biotech (needs verification) | Trained directly on perturbation outcomes. | needs verification. |
 | [[CPA]] | Supervised reconstruction with disentangled condition latent. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Learns additive perturbation/dose/covariate effects. | needs verification. |

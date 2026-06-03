@@ -26,7 +26,7 @@ The main benchmark tasks, datasets, and metrics reported by each model's source.
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | needs verification. | Benchmarks needs verification. |
 | [[CellPLM]] | Evaluated on annotation, imputation, spatial tasks. | Wen 2024, ICLR (needs verification) | Includes spatial benchmarks. | Datasets / metrics needs verification. |
 | [[scPRINT]] | Evaluated on GRN inference and related multi-task outputs. | Kalfon ~2024 (needs verification) | GRN-focused evaluation. | Datasets / metrics needs verification. |
-| [[UCE]] | Evaluated on zero-shot / cross-species cell-embedding tasks. | Rosen 2023, bioRxiv (needs verification) | Zero-shot embedding benchmarks. | Datasets / metrics needs verification. |
+| [[UCE]] | Cell-type classification + batch integration via scIB on Tabula Sapiens v2 and the Human Brain Cell Atlas. | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | Zero-shot embedding evaluated with standard integration metrics. | Exact metric values needs verification. |
 | [[GeneCompass]] | Evaluated on cross-species downstream tasks. | Yang 2024 (needs verification) | Human + mouse benchmarks. | Datasets / metrics needs verification. |
 | [[GEARS]] | Evaluated on Perturb-seq perturbation prediction, incl. unseen / combinatorial. | Roohani 2023, Nat Biotech (needs verification) | Perturbation-prediction benchmarks. | Datasets / metrics needs verification. |
 | [[CPA]] | Evaluated on perturbation / dose / covariate prediction. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Condition-prediction benchmarks. | Datasets / metrics needs verification. |

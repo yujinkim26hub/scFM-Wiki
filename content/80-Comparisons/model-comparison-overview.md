@@ -26,7 +26,7 @@ A single-glance summary of model **class**, **year/venue**, **input encoding**, 
 | [[scMamba]] | general scFM (SSM) | ~2024, needs verification | needs verification | needs verification | needs verification | needs verification |
 | [[CellPLM]] | general scFM | 2024, ICLR | cells as tokens; inter-cell + spatial | cell embeddings | needs verification | needs verification |
 | [[scPRINT]] | general scFM | ~2024, venue needs verification | needs verification | cell embeddings + GRN / gene-gene estimates | needs verification | needs verification |
-| [[UCE]] | general scFM | 2023, bioRxiv | genes via protein-LM (ESM2) embeddings | cell embedding only | not for transcriptome-level perturbation | yes (vocabulary-free, no fine-tuning) |
+| [[UCE]] | general scFM | 2023, bioRxiv ([[rosen-2023-universal-cell-embeddings\|summary]]) | genes via ESM2 protein-LM embeddings + expression-weighted cell sentence | cell embedding only | not for transcriptome-level perturbation (none used) | yes (vocabulary-free, no fine-tuning) |
 | [[GeneCompass]] | general scFM | 2024, venue needs verification | knowledge-informed priors (GRN/promoter/family/co-expr) | gene + cell embeddings | needs verification | needs verification |
 | [[GEARS]] | perturbation-specific | 2023, Nat Biotech | GNN over co-expression + GO graph | predicted post-perturbation expression | supervised transcriptome-level prediction (incl. unseen / combinatorial) | n/a (requires perturbation data) |
 | [[CPA]] | perturbation-specific | 2023, Mol Syst Biol | disentangled additive latent (perturbation/dose/covariate) | predicted expression | supervised; predicts unseen combos | n/a (requires perturbation data) |

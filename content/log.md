@@ -13,6 +13,14 @@ Chronological record of ingestions and substantive edits. **Prepend** new entrie
 
 ---
 
+## 2026-06-03 — Ingested: Rosen 2023 (UCE)
+
+- Ingested **[[rosen-2023-universal-cell-embeddings|Rosen et al. 2023 — Universal Cell Embeddings (UCE)]]**, bioRxiv, DOI 10.1101/2023.11.28.568918. Identity verified (title, first author Yanay Rosen, year, venue, DOI).
+- Created source note [[rosen-2023-universal-cell-embeddings-source]] and the 24-field summary [[rosen-2023-universal-cell-embeddings]] (`status: reviewed`).
+- Updated [[catalog|Catalog]] (added the paper row) and the model page [[UCE]] (verified architecture = 33-layer/~650M transformer; ESM2 protein-embedding gene encoding + expression-weighted "cell sentence"; masked-binary pretraining objective; ~36M cells / 8 species; zero-shot, "not intended to be finetuned"; scIB integration eval on Tabula Sapiens v2 & Human Brain Cell Atlas; no perturbation).
+- Cross-linked concept pages: [[cell embedding]], [[gene embedding]], [[single-cell foundation model]], [[zero-shot prediction]]; and comparison rows for UCE where now evidence-backed.
+- Epistemic notes: UCE output is a **cell embedding** (not transcriptome-level / not perturbation prediction); exact embedding dimension and scIB scores left `needs verification`.
+
 ## 2026-06-03 — Fix blank Catalog/Log pages; exclude templates from site
 
 - **Bug:** [[catalog|Catalog]] and [[log|Log]] rendered as blank white pages. Cause: `catalog.md`/`log.md` listed their own slug as an alias (`aliases: [catalog, …]` / `[log, …]`). Quartz emits alias redirects at the site root, so for these root-level pages the redirect overwrote the real page with a self-referential `<meta refresh>` loop. (Subfolder pages like `20-Models/Geneformer` were unaffected — their root-level alias redirect sits at a different path than the real page.)

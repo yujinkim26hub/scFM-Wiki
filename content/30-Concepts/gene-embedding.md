@@ -26,6 +26,7 @@ Gene embeddings are the input-level building blocks for most scFMs that use gene
 
 ## Models / methods that use it
 - [[scBERT]], [[scGPT]], [[Geneformer]], [[scFoundation]], [[GeneCompass]] (knowledge-informed), [[UCE]] (sequence-informed), [[scPRINT]].
+- **Example (ingested):** [[rosen-2023-universal-cell-embeddings|UCE (Rosen 2023)]] grounds each gene in the **ESM2 protein-language-model embedding** of its protein product, giving a cross-species gene representation without a fixed gene-ID vocabulary.
 
 ## Related concepts
 [[cell embedding]], [[gene relationship]], [[gene regulatory network]], [[tokenization-strategy|tokenization strategy]], [[model interpretability]]

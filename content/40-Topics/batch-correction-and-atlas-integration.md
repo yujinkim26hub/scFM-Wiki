@@ -24,7 +24,7 @@ The promise is that a model pretrained across many datasets learns a batch-invar
 - [[scGPT]] — reports integration/atlas-level tasks, often with fine-tuning (needs verification).
 - [[Geneformer]] — embeddings used for integration; rank-based encoding gives some intrinsic robustness to depth/normalization (needs verification).
 - [[scFoundation]], [[UCE]], [[CellPLM]], [[scPRINT]], [[GeneCompass]], [[scBERT]], [[scMamba]] — general scFMs producing cell embeddings usable for integration/mapping.
-- [[UCE]] is notable for a universal cross-species embedding aim relevant to cross-dataset integration (needs verification).
+- [[UCE]] performs **zero-shot** integration of datasets, batches, and **species** into one universal embedding, evaluated with scIB on Tabula Sapiens v2 and the Human Brain Cell Atlas ([[rosen-2023-universal-cell-embeddings|Rosen 2023]]); this is embedding-level integration, not generative expression correction.
 - Non-scFM baselines (scVI, scANVI, Harmony) are the key comparators and should appear on the [[batch correction benchmark]].
 
 ## Key papers

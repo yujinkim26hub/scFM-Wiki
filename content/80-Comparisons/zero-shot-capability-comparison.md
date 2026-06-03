@@ -26,7 +26,7 @@ What works with frozen weights and no task-specific training — typically reuse
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | needs verification. | Zero-shot status needs verification. |
 | [[CellPLM]] | needs verification. | Wen 2024, ICLR (needs verification) | Frozen embedding use plausible but unconfirmed. | needs verification. |
 | [[scPRINT]] | needs verification. | Kalfon ~2024 (needs verification) | needs verification. | Zero-shot status needs verification. |
-| [[UCE]] | Zero-shot universal cell embeddings; no fine-tuning required. | Rosen 2023, bioRxiv (needs verification) | Designed for frozen, vocabulary-free use across species. | needs verification. |
+| [[UCE]] | Zero-shot universal cell embeddings; authors state it is "not intended to be finetuned"; embeds unseen species. | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | Designed for frozen, vocabulary-free use across datasets and species. | Zero-shot accuracy vs tuned models / simple baselines needs verification. |
 | [[GeneCompass]] | Embeddings usable across species (zero-shot extent needs verification). | Yang 2024 (needs verification) | Cross-species frozen embeddings plausible. | needs verification. |
 | [[GEARS]] | n/a — supervised perturbation model; not used zero-shot. | Roohani 2023, Nat Biotech (needs verification) | Requires perturbation training data. | — |
 | [[CPA]] | n/a — supervised model; not used zero-shot. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Requires condition-labeled training. | — |

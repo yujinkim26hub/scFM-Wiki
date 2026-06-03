@@ -26,7 +26,7 @@ What kind of claim a model's output supports: a **cell-embedding shift**, a **cl
 | [[scMamba]] | needs verification. | ~2024 (needs verification) | needs verification. | Output interpretation needs verification. |
 | [[CellPLM]] | Cell embeddings (and imputed expression). | Wen 2024, ICLR (needs verification) | Embeddings are representations; imputation fills missing values, not perturbation response. | needs verification. |
 | [[scPRINT]] | Cell embeddings + GRN estimates. | Kalfon ~2024 (needs verification) | GRN edges are inferred associations, not validated causal links. | needs verification. |
-| [[UCE]] | Cell embedding only. | Rosen 2023, bioRxiv (needs verification) | Embedding position reflects learned similarity, not expression. | needs verification. |
+| [[UCE]] | Universal cell embedding. | [[rosen-2023-universal-cell-embeddings|Rosen 2023]] | Position reflects learned similarity across cells/species — not expression, not a perturbation response. | — |
 | [[GeneCompass]] | Gene + cell embeddings. | Yang 2024 (needs verification) | Embedding shift, not expression prediction. | needs verification. |
 | [[GEARS]] | Predicted post-perturbation expression. | Roohani 2023, Nat Biotech (needs verification) | Output is a transcriptome-level prediction (actual expression values). | Predictive accuracy is dataset-dependent; needs verification. |
 | [[CPA]] | Predicted expression under conditions. | Lotfollahi 2023, Mol Syst Biol (needs verification) | Transcriptome-level prediction. | needs verification. |
