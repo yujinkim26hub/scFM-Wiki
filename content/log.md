@@ -13,6 +13,12 @@ Chronological record of ingestions and substantive edits. **Prepend** new entrie
 
 ---
 
+## 2026-06-03 — Fix flattened section URLs for source/summary pages
+
+- **Bug:** the UCE summary/source published at `/10-Summaries/…` and `/00-Sources/…` correctly, but inbound links (incl. [[catalog|Catalog]]) pointed at flattened **root** URLs (`/rosen-…`). Cause: the pages aliased themselves to their own filename slug; Quartz emits each alias as a root-level redirect, and with `shortest` link resolution `[[wikilinks]]` resolved to that flat root slug.
+- **Fix:** removed the self-referential aliases from [[rosen-2023-universal-cell-embeddings]] and [[rosen-2023-universal-cell-embeddings-source]]. Links now resolve by basename to the real section paths. Updated `paper-summary-template`/`source-template` (no self-alias) and [[AGENTS]] §2 to prevent recurrence.
+- Verified locally (Quartz v4): pages publish at `/10-Summaries/…` and `/00-Sources/…`, root flat stubs gone, catalog link uses the section path.
+
 ## 2026-06-03 — Ingested: Rosen 2023 (UCE)
 
 - Ingested **[[rosen-2023-universal-cell-embeddings|Rosen et al. 2023 — Universal Cell Embeddings (UCE)]]**, bioRxiv, DOI 10.1101/2023.11.28.568918. Identity verified (title, first author Yanay Rosen, year, venue, DOI).

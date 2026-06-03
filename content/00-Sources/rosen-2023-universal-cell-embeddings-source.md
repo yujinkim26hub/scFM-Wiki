@@ -1,6 +1,6 @@
 ---
 title: "Rosen 2023 — Universal Cell Embeddings (source)"
-aliases: ["rosen-2023-universal-cell-embeddings source"]
+aliases: []
 type: source
 year: 2023
 venue: "bioRxiv"

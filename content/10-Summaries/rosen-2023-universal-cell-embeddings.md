@@ -1,6 +1,6 @@
 ---
 title: "Rosen 2023 — Universal Cell Embeddings (UCE)"
-aliases: ["rosen-2023-universal-cell-embeddings", "UCE paper"]
+aliases: ["UCE paper"]
 type: summary
 model: "UCE"
 year: 2023

@@ -1,6 +1,6 @@
 ---
 title: "<First author> <Year> — <short title>"
-aliases: ["<firstauthor-year-slug>"]
+aliases: []   # do NOT alias a page to its own filename slug — it creates a root-level redirect that flattens section URLs. Add only genuine alternate names.
 type: summary
 model: "<model name or n/a>"
 year: <YYYY>

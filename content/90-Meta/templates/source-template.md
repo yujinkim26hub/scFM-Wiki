@@ -1,6 +1,6 @@
 ---
 title: "<First author> <Year> (source)"
-aliases: ["<firstauthor-year-slug> source"]
+aliases: []   # do NOT alias a page to its own filename slug — it creates a root-level redirect that flattens section URLs. Add only genuine alternate names.
 type: source
 year: <YYYY>
 venue: "<journal / venue>"

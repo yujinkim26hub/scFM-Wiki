@@ -44,7 +44,9 @@ When unsure whether something is true, **leave it marked uncertain rather than g
 ## 2. File & link conventions
 
 - **Filenames** mirror the page title, lower-kebab-case for concepts/topics (`gene-embedding.md`), and the model's canonical capitalization for models (`scGPT.md`, `Geneformer.md`). Obsidian wikilinks resolve by basename regardless of folder.
-- **Wikilinks** use the display title: `[[scGPT]]`, `[[gene embedding]]`, `[[in silico perturbation]]`. If the filename differs from the link text, use an alias in the page's frontmatter `aliases:` so the link resolves. Keep aliases for every multi-word concept (e.g. file `gene-embedding.md` has `aliases: [gene embedding, gene embeddings]`).
+- **Wikilinks** use the display title: `[[scGPT]]`, `[[gene embedding]]`, `[[in silico perturbation]]`. If the filename differs from the link text, use an alias in the page's frontmatter `aliases:` so the link resolves. Keep aliases for every multi-word concept (e.g. file `gene-embedding.md` has `aliases: [gene embeddings]`).
+- **Never alias a page to its own filename slug.** Quartz emits an alias as a **root-level redirect**, and with `shortest` link resolution inbound `[[wikilinks]]` then resolve to that flat root URL instead of the real section path (e.g. `/rosen-…` instead of `/10-Summaries/rosen-…`). For a root-level page (`catalog`, `log`) the redirect even overwrites the page → blank. So: the link `[[rosen-2023-foo]]` already resolves to `10-Summaries/rosen-2023-foo.md` by basename — do **not** add `rosen-2023-foo` (or its slugified form) as an alias. Add only genuine *alternate* names that differ from the slug. Section folders (`10-Summaries/`, `00-Sources/`, …) are preserved automatically; do not flatten them.
+- **Wikilinks inside Markdown tables** must escape the display pipe: `[[slug\|Display text]]` (so `|` isn't read as a column separator).
 - **Frontmatter** (YAML) on every page:
   ```yaml
   ---
