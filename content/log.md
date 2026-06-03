@@ -24,7 +24,7 @@ Chronological record of ingestions and substantive edits. **Prepend** new entrie
 
 - Created the vault structure: `00-Sources` … `90-Meta/templates`.
 - Wrote system docs: `README.md`, `AGENTS.md`, `CLAUDE.md`.
-- Wrote hub pages: [[index]], [[catalog]], [[log]].
+- Wrote hub pages: [[index]], [[catalog|Catalog]], [[log|Log]].
 - Added page templates (paper summary 24-field, model, concept, topic, dataset, benchmark, comparison, source).
 - Created **starter (stub) pages**:
   - 12 models: [[Geneformer]], [[scGPT]], [[scFoundation]], [[scBERT]], [[scMamba]], [[CellPLM]], [[scPRINT]], [[UCE]], [[GeneCompass]], [[GEARS]], [[CPA]], [[scGen]].

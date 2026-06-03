@@ -39,6 +39,7 @@ concurrency:
 # sitemap/RSS/OG absolute URLs are correct. Page paths in Quartz are relative, so
 # navigation works at the subpath regardless.
 env:
+  SITE_TITLE: scFM-Wiki
   SITE_BASEURL: yujinkim26hub.github.io/scFM-Wiki
 
 jobs:
@@ -71,11 +72,14 @@ jobs:
           rm -rf quartz/content
           cp -r wiki/content quartz/content
 
-      - name: Set baseUrl for the GitHub Pages project path
+      - name: Set site title and baseUrl
         working-directory: quartz
         run: |
+          # Replace Quartz's default pageTitle ("🪴 Quartz 4") with the wiki name,
+          # and set baseUrl for the GitHub Pages project subpath.
+          sed -i -E "s#pageTitle: \"[^\"]*\"#pageTitle: \"${SITE_TITLE}\"#" quartz.config.ts
           sed -i -E "s#baseUrl: \"[^\"]*\"#baseUrl: \"${SITE_BASEURL}\"#" quartz.config.ts
-          grep -n "baseUrl" quartz.config.ts || true
+          grep -nE "pageTitle|baseUrl" quartz.config.ts || true
 
       - name: Build site
         working-directory: quartz

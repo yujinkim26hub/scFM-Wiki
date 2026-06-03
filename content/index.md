@@ -15,8 +15,8 @@ A living, LLM-maintained wiki on **single-cell foundation models (scFMs)**, **vi
 
 ## Start here
 
-- 🗂️ **[[catalog]]** — master index of every page.
-- 🪵 **[[log]]** — chronological ingestion / edit log.
+- 🗂️ **[[catalog|Catalog]]** — master index of every page.
+- 🪵 **[[log|Log]]** — chronological ingestion / edit log.
 - 🧩 [[single-cell foundation model]] — the central concept.
 - ⚖️ [[model comparison overview]] — how the tracked models line up across shared criteria.
 

@@ -9,7 +9,7 @@ updated: 2026-06-03
 
 # Catalog — master index
 
-The authoritative index of every page. When a page is added or substantially changed, update this file and [[log]]. `status` mirrors the page frontmatter (`stub` = starter scaffold not yet filled from primary sources).
+The authoritative index of every page. When a page is added or substantially changed, update this file and [[log|Log]]. `status` mirrors the page frontmatter (`stub` = starter scaffold not yet filled from primary sources).
 
 ## Papers / summaries (`10-Summaries/`)
 

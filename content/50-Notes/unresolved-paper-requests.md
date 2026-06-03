@@ -11,7 +11,7 @@ updated: 2026-06-03
 
 Papers requested for ingestion that **could not be confidently identified**. Per [[AGENTS]] §3.1, we do **not** guess a paper's identity or fabricate a summary. Each entry records what the user provided and what was searched, so it can be resolved later.
 
-> To resolve an entry: confirm the DOI/identity, move it through the normal ingestion workflow, then delete it from this list (note the resolution in [[log]]).
+> To resolve an entry: confirm the DOI/identity, move it through the normal ingestion workflow, then delete it from this list (note the resolution in [[log|Log]]).
 
 ## Needs verification
 
