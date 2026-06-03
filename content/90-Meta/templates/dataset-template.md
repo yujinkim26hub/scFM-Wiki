@@ -5,7 +5,7 @@ type: dataset
 modality: scRNA-seq | snRNA-seq | scATAC-seq | multi-omics | perturbation
 tags: [dataset, scfm]
 status: stub
-updated: <YYYY-MM-DD>
+updated: 2026-06-03
 ---
 
 # <dataset>

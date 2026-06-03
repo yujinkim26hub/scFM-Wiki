@@ -1,13 +1,21 @@
-# Build the content/ folder as a Quartz v4 site and deploy to GitHub Pages.
+# Build the content/ folder as a Quartz site and deploy to GitHub Pages.
 #
-# This repo stores only the Markdown vault (content/). The workflow scaffolds
+# This repo stores only the Markdown vault (content/). The workflow checks out
 # Quartz at build time, drops content/ in, builds, and publishes.
+#
+# WHY v4 IS PINNED:
+#   Quartz's default branch is now v5 (5.0.0), which expects a generated
+#   `.quartz/` directory (created by `npx quartz create`) — its components
+#   import from "../../.quartz/plugins", so a bare clone-and-build fails with
+#   `Could not resolve "../../.quartz/plugins"`. Quartz v4 (4.5.2) uses normal
+#   relative imports and builds directly from a clone, which is what this
+#   content-only deploy pattern relies on. So we pin `ref: v4`.
+#   To move to v5 later, vendor a full `npx quartz create` scaffold into this
+#   repo and build that instead.
 #
 # ONE-TIME SETUP:
 #   1. Repo → Settings → Pages → Build and deployment → Source: "GitHub Actions".
-#   2. Set `base` in the build step below to "/<repo-name>/" (here: /scFM-Wiki/)
-#      and `baseUrl` to "<user>.github.io/scFM-Wiki" if you customize quartz.config.
-#   3. Push to main. The site builds and deploys automatically.
+#   2. Push to main. The site builds and deploys automatically.
 #
 # Quartz docs: https://quartz.jzhao.xyz/
 
@@ -27,6 +35,12 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+# Project page is served from https://<user>.github.io/scFM-Wiki — set baseUrl so
+# sitemap/RSS/OG absolute URLs are correct. Page paths in Quartz are relative, so
+# navigation works at the subpath regardless.
+env:
+  SITE_BASEURL: yujinkim26hub.github.io/scFM-Wiki
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -36,10 +50,11 @@ jobs:
         with:
           path: wiki
 
-      - name: Checkout Quartz
+      - name: Checkout Quartz (pinned to stable v4)
         uses: actions/checkout@v4
         with:
           repository: jackyzha0/quartz
+          ref: v4
           path: quartz
 
       - name: Setup Node
@@ -56,17 +71,21 @@ jobs:
           rm -rf quartz/content
           cp -r wiki/content quartz/content
 
+      - name: Set baseUrl for the GitHub Pages project path
+        working-directory: quartz
+        run: |
+          sed -i -E "s#baseUrl: \"[^\"]*\"#baseUrl: \"${SITE_BASEURL}\"#" quartz.config.ts
+          grep -n "baseUrl" quartz.config.ts || true
+
       - name: Build site
         working-directory: quartz
-        run: npx quartz build --output ../public
-        # If serving from a project page (https://<user>.github.io/scFM-Wiki),
-        # configure `baseUrl` in quartz.config.ts. The default build is fine for
-        # a user/org root page.
+        run: npx quartz build
+        # Emits to quartz/public (default output folder).
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: quartz/public
 
   deploy:
     needs: build

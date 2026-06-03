@@ -7,7 +7,7 @@ year: <YYYY>
 venue: "<journal / venue>"
 tags: [summary, scfm, needs-verification]
 status: stub
-updated: <YYYY-MM-DD>
+updated: 2026-06-03
 ---
 
 # <First author> <Year> — <Title>

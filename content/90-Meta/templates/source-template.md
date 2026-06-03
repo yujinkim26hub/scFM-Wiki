@@ -7,7 +7,7 @@ venue: "<journal / venue>"
 doi: "<doi or url>"
 tags: [source]
 status: stub
-updated: <YYYY-MM-DD>
+updated: 2026-06-03
 ---
 
 # <First author> et al., <Year> — source record

@@ -6,7 +6,7 @@ model_class: general-scfm | perturbation-specific | other
 year: <YYYY>
 tags: [scfm, model, needs-verification]
 status: stub
-updated: <YYYY-MM-DD>
+updated: 2026-06-03
 ---
 
 # <Model name>

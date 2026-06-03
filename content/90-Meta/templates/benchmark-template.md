@@ -4,7 +4,7 @@ aliases: [<benchmark task>]
 type: benchmark
 tags: [benchmark, scfm]
 status: stub
-updated: <YYYY-MM-DD>
+updated: 2026-06-03
 ---
 
 # <benchmark task>
