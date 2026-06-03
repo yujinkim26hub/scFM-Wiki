@@ -1,0 +1,80 @@
+# Build the content/ folder as a Quartz v4 site and deploy to GitHub Pages.
+#
+# This repo stores only the Markdown vault (content/). The workflow scaffolds
+# Quartz at build time, drops content/ in, builds, and publishes.
+#
+# ONE-TIME SETUP:
+#   1. Repo → Settings → Pages → Build and deployment → Source: "GitHub Actions".
+#   2. Set `base` in the build step below to "/<repo-name>/" (here: /scFM-Wiki/)
+#      and `baseUrl` to "<user>.github.io/scFM-Wiki" if you customize quartz.config.
+#   3. Push to main. The site builds and deploys automatically.
+#
+# Quartz docs: https://quartz.jzhao.xyz/
+
+name: Deploy Quartz site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout wiki content
+        uses: actions/checkout@v4
+        with:
+          path: wiki
+
+      - name: Checkout Quartz
+        uses: actions/checkout@v4
+        with:
+          repository: jackyzha0/quartz
+          path: quartz
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Quartz deps
+        working-directory: quartz
+        run: npm ci
+
+      - name: Copy vault into Quartz content
+        run: |
+          rm -rf quartz/content
+          cp -r wiki/content quartz/content
+
+      - name: Build site
+        working-directory: quartz
+        run: npx quartz build --output ../public
+        # If serving from a project page (https://<user>.github.io/scFM-Wiki),
+        # configure `baseUrl` in quartz.config.ts. The default build is fine for
+        # a user/org root page.
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
